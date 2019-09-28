@@ -1,0 +1,22 @@
+$theme-colors:(
+    "primary": #d95700
+);
+
+.navbar-brand{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+
+#navbarNav{
+    margin-top : 0px;
+    font-size: 30px;
+    height: 100vh;
+}
+
+img{
+    height:60px; 
+    width:60px
+}
+
+//bootstrap sass files
+@import "node_modules/bootstrap/scss/bootstrap";
