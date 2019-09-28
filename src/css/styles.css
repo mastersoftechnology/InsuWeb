@@ -6,6 +6,8 @@
   margin-top: 0px;
   font-size: 30px;
   height: 100vh; }
+  #navbarNav .dropdown:hover > .dropdown-menu {
+    display: block; }
 
 img {
   height: 60px;

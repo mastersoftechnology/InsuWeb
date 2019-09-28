@@ -11,12 +11,16 @@ $theme-colors:(
     margin-top : 0px;
     font-size: 30px;
     height: 100vh;
+    .dropdown:hover>.dropdown-menu {
+        display: block;
+    }
 }
 
 img{
     height:60px; 
     width:60px
 }
+
 
 //bootstrap sass files
 @import "node_modules/bootstrap/scss/bootstrap";
