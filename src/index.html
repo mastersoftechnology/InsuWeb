@@ -77,16 +77,56 @@
                                     <span>Rental Car</span>
                                 </div>
                             </a>
+                            <a class="dropdown-item" href="#">
+                                <div>
+                                    <span>Repair Locations</span>
+                                </div>
+                            </a>
                         </div>                       
                     </div>
-
-
-                    <a class="dropdown-item" href="#"><img src="/images/claim.png"/> <span style="margin-left: 20px;margin-top: 20px;">Claims</span></a>
-                    <div class="dropdown-divider"></div> 
-                    <a class="dropdown-item" href="#"><img src="/images/contact.png"/> <span style="margin-left: 20px;margin-top: 20px;">Contact Us</span></a>
-                    <a class="dropdown-item" href="#"><img src="/images/about.png"/> <span style="margin-left: 20px;margin-top: 20px;">About Us</span></a>
+                    <!-- Claim dropdown -->
+                    <div class="dropdown dropright" id="claimDiv">
+                        <a class="dropdown-item" id="claim" data-toggle="dropdown" href="#">
+                            <img id="accImg" src="/images/claim.png"/>
+                            <span>Claims</span>
+                        </a>
+                        <div class="dropdown-menu" id="claimDetail">
+                            <a class="dropdown-item">
+                                <div>
+                                    <span>Report Claim</span>
+                                </div>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <div>
+                                    <span>Report Glass Damage</span>
+                                </div>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <div>
+                                    <span>Catastophe Claim</span>
+                                </div>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <div>
+                                    <span>View Claims</span>
+                                </div>
+                            </a>
+                        </div>                       
+                    </div>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#" id="contact">
+                        <img src="/images/contact.png"/> 
+                        <span>Contact Us</span>
+                    </a>
+                    <a class="dropdown-item" href="#" id="about">
+                        <img src="/images/about.png"/> 
+                        <span>About Us</span>
+                    </a>
                 </div>
-                
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>              
             </nav>
             
             

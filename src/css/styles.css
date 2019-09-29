@@ -16,6 +16,27 @@
     background: #FFFFFF;
     border: 1px solid white; }
 
+#claimDiv:hover > #claim {
+  background: #3C0243;
+  color: aliceblue; }
+  #claimDiv:hover > #claim img {
+    background: #FFFFFF;
+    border: 1px solid white; }
+
+#contact:hover {
+  background: #3A0303;
+  color: aliceblue; }
+  #contact:hover img {
+    background: #FFFFFF;
+    border: 1px solid white; }
+
+#about:hover {
+  background: #870505;
+  color: aliceblue; }
+  #about:hover img {
+    background: #FFFFFF;
+    border: 1px solid white; }
+
 #accountDiv:hover > #accDetail {
   background: #E99207; }
   #accountDiv:hover > #accDetail span {
@@ -28,6 +49,12 @@
     color: aliceblue;
     margin: 20px; }
 
+#claimDiv:hover > #claimDetail {
+  background: #3C0243; }
+  #claimDiv:hover > #claimDetail span {
+    color: aliceblue;
+    margin: 20px; }
+
 #accDetail > a:hover {
   background: #BB780C;
   color: #FFFFFF; }
@@ -36,7 +63,11 @@
   background: #06012E;
   color: #FFFFFF; }
 
-#accDetail div, #roadsideDetail div {
+#claimDetail > a:hover {
+  background: #260126;
+  color: #FFFFFF; }
+
+#accDetail div, #roadsideDetail div, #claimDetail div {
   height: 60px; }
 
 #navbarNav {

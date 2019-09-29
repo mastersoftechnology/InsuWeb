@@ -30,13 +30,25 @@ $theme-colors:(
 }
 #roadsideDiv:hover>#roadside{
     @include dropdownhover(#26067E, #FFFFFF);
- }
+}
+#claimDiv:hover>#claim{
+    @include dropdownhover(#3C0243, #FFFFFF);
+}
+#contact:hover{
+    @include dropdownhover(#3A0303, #FFFFFF);
+}
+#about:hover{
+    @include dropdownhover(#870505, #FFFFFF);
+}
 // Details dropdown
 #accountDiv:hover>#accDetail{
     @include dropdownDetail(#E99207);
 }
 #roadsideDiv:hover>#roadsideDetail{
     @include dropdownDetail(#26067E);
+}
+#claimDiv:hover>#claimDetail{
+    @include dropdownDetail(#3C0243);
 }
 // Details hover
 #accDetail>a:hover{
@@ -47,8 +59,12 @@ $theme-colors:(
     background: #06012E;
     color: #FFFFFF;
 }
+#claimDetail>a:hover{
+    background: #260126;
+    color: #FFFFFF;
+}
 // Details height to inline with the main dropdown values
-#accDetail, #roadsideDetail{
+#accDetail, #roadsideDetail, #claimDetail{
     div{
         height: 60px;
     }
