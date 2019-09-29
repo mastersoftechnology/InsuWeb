@@ -26,17 +26,61 @@
                 </a>
                 <!-- Below section opens when click on toggler icon -->
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="navbarNav">
-                    <div class="dropdown dropright">
-                        <a class="dropdown-item" data-toggle="dropdown" href="#"><img src="/images/user-account-box.png"/> <span style="margin-left: 20px;margin-top: 20px;">Account</span>
+                    <!-- Account dropdown -->
+                    <div class="dropdown dropright" id="accountDiv">
+                        <a class="dropdown-item" id="account" data-toggle="dropdown" href="#">
+                            <img id="accImg" src="/images/user-account-box.png"/>
+                            <span>Account</span>
                         </a>
-                        <div class="dropdown-menu" id="autoInsurance" style="margin-top: 0px">
-                            <a class="dropdown-item" href="#">E ID Cards</a>
-                            <a class="dropdown-item" href="#">Go Paperless</a>
-                            <a class="dropdown-item" href="#">Payment</a>
-                            <a class="dropdown-item" href="#">Policy Changes</a>
+                        <div class="dropdown-menu" id="accDetail">
+                            <a class="dropdown-item">
+                                <div>
+                                    <span>E ID Cards</span>
+                                </div>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <div>
+                                    <span>Go Paperless</span>
+                                </div>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <div>
+                                    <span>Payment</span>
+                                </div>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <div>
+                                    <span>Policy Changes</span>
+                                </div>
+                            </a>
                         </div>                       
                     </div>
-                    <a class="dropdown-item" href="#"><img src="/images/roadside.png"/> <span style="margin-left: 20px;margin-top: 20px;">Roadside Assistance</span></a>
+                    <!-- Roadside dropdown -->
+                    <div class="dropdown dropright" id="roadsideDiv">
+                        <a class="dropdown-item" id="roadside" data-toggle="dropdown" href="#">
+                            <img id="accImg" src="/images/roadside.png"/>
+                            <span>Roadside Assistance</span>
+                        </a>
+                        <div class="dropdown-menu" id="roadsideDetail">
+                            <a class="dropdown-item">
+                                <div>
+                                    <span>Tire Change</span>
+                                </div>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <div>
+                                    <span>Fuel</span>
+                                </div>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <div>
+                                    <span>Rental Car</span>
+                                </div>
+                            </a>
+                        </div>                       
+                    </div>
+
+
                     <a class="dropdown-item" href="#"><img src="/images/claim.png"/> <span style="margin-left: 20px;margin-top: 20px;">Claims</span></a>
                     <div class="dropdown-divider"></div> 
                     <a class="dropdown-item" href="#"><img src="/images/contact.png"/> <span style="margin-left: 20px;margin-top: 20px;">Contact Us</span></a>

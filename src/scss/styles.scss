@@ -7,20 +7,80 @@ $theme-colors:(
     font-weight: bolder;
 }
 
-#navbarNav{
-    margin-top : 0px;
-    font-size: 30px;
-    height: 100vh;
-    .dropdown:hover>.dropdown-menu {
-        display: block;
+// mixin is used for reusability
+@mixin dropdownhover($dItemBg, $imageBg) {
+    background: $dItemBg;
+    color: aliceblue;
+    img{
+        background: $imageBg;
+        border: 1px solid white;
+    }    
+}
+@mixin dropdownDetail($bg-color) {
+    background: $bg-color;
+    span{
+        color: aliceblue;
+        margin: 20px;
     }
 }
 
+// Hover colors and background for dropdowns
+#accountDiv:hover>#account{
+   @include dropdownhover(#E99207, #FFFFFF);
+}
+#roadsideDiv:hover>#roadside{
+    @include dropdownhover(#26067E, #FFFFFF);
+ }
+// Details dropdown
+#accountDiv:hover>#accDetail{
+    @include dropdownDetail(#E99207);
+}
+#roadsideDiv:hover>#roadsideDetail{
+    @include dropdownDetail(#26067E);
+}
+// Details hover
+#accDetail>a:hover{
+    background: #BB780C;
+    color: #FFFFFF;
+}
+#roadsideDetail>a:hover{
+    background: #06012E;
+    color: #FFFFFF;
+}
+// Details height to inline with the main dropdown values
+#accDetail, #roadsideDetail{
+    div{
+        height: 60px;
+    }
+}
+
+
+#navbarNav{
+    // margin-top : 0px;
+    height: 100vh;
+    font-size: 30px;
+    border: none !important;
+    padding-top: 0px;
+    .dropdown:hover>.dropdown-menu {
+        display: block;
+        //background: rgb(143, 90, 4);
+        height: 100vh;
+        border: none !important;
+        border-radius: 0%;
+        margin-left: 0px;
+        padding-top: 0px;
+    }
+    span{
+        margin: 20px; 
+    }
+    .dropdown-menu{
+        font-size: 30px;
+    }
+}
 img{
     height:60px; 
     width:60px
 }
-
 
 //bootstrap sass files
 @import "node_modules/bootstrap/scss/bootstrap";

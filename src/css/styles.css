@@ -2,12 +2,59 @@
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: bolder; }
 
+#accountDiv:hover > #account {
+  background: #E99207;
+  color: aliceblue; }
+  #accountDiv:hover > #account img {
+    background: #FFFFFF;
+    border: 1px solid white; }
+
+#roadsideDiv:hover > #roadside {
+  background: #26067E;
+  color: aliceblue; }
+  #roadsideDiv:hover > #roadside img {
+    background: #FFFFFF;
+    border: 1px solid white; }
+
+#accountDiv:hover > #accDetail {
+  background: #E99207; }
+  #accountDiv:hover > #accDetail span {
+    color: aliceblue;
+    margin: 20px; }
+
+#roadsideDiv:hover > #roadsideDetail {
+  background: #26067E; }
+  #roadsideDiv:hover > #roadsideDetail span {
+    color: aliceblue;
+    margin: 20px; }
+
+#accDetail > a:hover {
+  background: #BB780C;
+  color: #FFFFFF; }
+
+#roadsideDetail > a:hover {
+  background: #06012E;
+  color: #FFFFFF; }
+
+#accDetail div, #roadsideDetail div {
+  height: 60px; }
+
 #navbarNav {
-  margin-top: 0px;
+  height: 100vh;
   font-size: 30px;
-  height: 100vh; }
+  border: none !important;
+  padding-top: 0px; }
   #navbarNav .dropdown:hover > .dropdown-menu {
-    display: block; }
+    display: block;
+    height: 100vh;
+    border: none !important;
+    border-radius: 0%;
+    margin-left: 0px;
+    padding-top: 0px; }
+  #navbarNav span {
+    margin: 20px; }
+  #navbarNav .dropdown-menu {
+    font-size: 30px; }
 
 img {
   height: 60px;
