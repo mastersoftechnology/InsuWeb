@@ -24,7 +24,8 @@
                 <a class="navbar-brand mx-auto" href="#">
                     INSURANCE
                 </a>
-                <!-- Below section opens when click on toggler icon -->
+
+                                <!-- Below section opens when click on toggler icon -->
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="navbarNav">
                     <!-- Account dropdown -->
                     <div class="dropdown dropright" id="accountDiv">
@@ -58,7 +59,7 @@
                     <!-- Roadside dropdown -->
                     <div class="dropdown dropright" id="roadsideDiv">
                         <a class="dropdown-item" id="roadside" data-toggle="dropdown" href="#">
-                            <img id="accImg" src="/images/roadside.png"/>
+                            <img id="accImg" src="/images/roadside.png" class="rounded"/>
                             <span>Roadside Assistance</span>
                         </a>
                         <div class="dropdown-menu" id="roadsideDetail">
@@ -87,7 +88,7 @@
                     <!-- Claim dropdown -->
                     <div class="dropdown dropright" id="claimDiv">
                         <a class="dropdown-item" id="claim" data-toggle="dropdown" href="#">
-                            <img id="accImg" src="/images/claim.png"/>
+                            <img id="accImg" class="rounded-circle" src="/images/claim.png"/>
                             <span>Claims</span>
                         </a>
                         <div class="dropdown-menu" id="claimDetail">
@@ -115,23 +116,61 @@
                     </div>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="#" id="contact">
-                        <img src="/images/contact.png"/> 
+                        <img src="/images/contact.png" class="rounded"/> 
                         <span>Contact Us</span>
                     </a>
                     <a class="dropdown-item" href="#" id="about">
-                        <img src="/images/about.png"/> 
+                        <img src="/images/about.png" class="rounded-circle"/> 
                         <span>About Us</span>
                     </a>
                 </div>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>              
+                
+                    <a id="user" data-toggle="dropdown" href="#" data-target="#userDetail">
+                        <img id="userImg" style="height: 30px;width: 30px" src="/images/user.png"/>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" id="userDetail">
+                        <form class="px-4 py-3">
+                            <div class="form-group">
+                              <label for="exampleDropdownFormEmail1">Email address</label>
+                              <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+                            </div>
+                            <div class="form-group">
+                              <label for="exampleDropdownFormPassword1">Password</label>
+                              <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                              <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                                <label class="form-check-label" for="dropdownCheck">
+                                  Remember me
+                                </label>
+                              </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Sign in</button>
+                          </form>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">New around here? Sign up</a>
+                          <a class="dropdown-item" href="#">Forgot password?</a> 
+                    </div>                      
+                
+                             
             </nav>
-            
-            
-            
         </div>
+
+        <div class="container pt-4 my-5">
+            <div class="jumbotron">
+                <h1 class="display-6">Welcome to Insurance </h1>
+                <h1 class="display-4">Saftey starts here </h1>
+            </div>
+        </div> 
+        
+        <div class="container"> 
+            
+
+        </div>
+            
+            
+       
 
 
 

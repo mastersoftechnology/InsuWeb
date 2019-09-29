@@ -1,6 +1,7 @@
 $theme-colors:(
     "primary": #d95700
 );
+$jumbotron-bg: #FFFFFF;
 
 .navbar-brand{
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -93,9 +94,18 @@ $theme-colors:(
         font-size: 30px;
     }
 }
+
+#userDiv{
+    .dropdown:hover {padding-bottom:20px;}
+    .dropdown-menu {top:auto;}
+}
 img{
     height:60px; 
     width:60px
+}
+
+.jumbotron{
+    background: #FFFFFF;
 }
 
 //bootstrap sass files
